@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Clubs Nova
+        </title>
+        <link rel="stylesheet" href="OurWebsite.css">
+    </head>
+        <style>
+            img{
+                width: 300px;
+                height: 300px;
+            }
+            .Car{
+               
+                display: flex;
+                justify-content: space-evenly;
+
+            }
+            .Car:hover .Bag{
+                transform: scale(0.8);
+            }
+            .Car .Bag:hover{
+                transform: scale(0.9) rotate(5deg);
+                background-color: dodgerblue;
+                border: gray 3px solid ;
+                color: white;
+            }
+        
+            .Bag{
+            
+                transition: all 0.5s ease-in-out;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 350px;
+                height: 450px;
+                border: 3px dodgerblue solid;
+                border-radius: 30px;
+            }
+            header{
+               font-style: italic;
+                background-color: dodgerblue;
+                font-size: 70px;
+                text-align: center;
+                color: white;
+            }
+            footer {
+                background-color: dodgerblue;
+                font-size: 30px;
+                color: white;
+                text-align: center;
+                padding: 20px 0;
+                width: 100%;
+                margin-top: auto;
+            }
+            footer a {
+                color: white;
+                text-decoration: underline;
+            }
+        </style>
+    
+    <body>
+        <header>
+            Bright Minds Hub
+        </header>
+        <br><br><br><br><br><br><br>
+        <div class="Car"> 
+            <div class="Bag">
+                <h1>category</h1>
+                <img src="Student.webp" alt="main image here">
+                <h1>Student</h1>
+            
+        </div>
+        <div class="Car"> 
+            <div class="Bag">
+                <h1>category</h1>
+                <img src="Student.webp" alt="main image here">
+                <h1>Student</h1>
+            
+        </div>
+        <div class="Car"> 
+            <div class="Bag">
+                <h1>category</h1>
+                <img src="Student.webp" alt="main image here">
+                <h1>Student</h1>
+           
+        </div>
+        <div class="Car"> 
+            <div class="Bag">
+                <h1>category</h1>
+                <img src="Student.webp" alt="main image here">
+                <h1>Student</h1>
+        </div>
+        </div>
+        <br><br><br><br><br><br><br>
+        <footer>
+    💌 Drop us a mail: 
+    <a href="mailto:team@inspireclub.com" style="color: white; text-decoration: underline;">
+        team@inspireclub.com
+    </a>
+</footer>
+    </body>
+</html>
