@@ -6,58 +6,55 @@
     <title>Document</title>
 </head>
 <body>
-    <form onsubmit=" return submitForm()">
-        <label for="na">Name</label>
-        <br>
-        <input type="text" id="na" placeholder="Enter name">
-        <br>
-        <span id="a1" style="color: red;"></span>
-        <br>
-        <label for="">Number</label>
-        <br>
-        <input type="number" id="nu" placeholder="Enter number">
-        <br>
-        <span id="a2" style="color: red;" ></span>
-        <br>
-        <label for="na">E-mail</label>
-        <br>
-        <input type="email" id="ma" placeholder="Enter mail id">
-        <br>
-        <span id="a3" style="color: red;"></span>
-        <br><br>
+    <form onsubmit="return submitForm()">
+        <label for="na">Name</label><br>
+        <input type="text" id="na" placeholder="Enter name"><br>
+        <span id="a1" style="color: red;"></span><br>
+
+        <label for="nu">Number</label><br>
+        <input type="number" id="nu" placeholder="Enter number"><br>
+        <span id="a2" style="color: red;"></span><br>
+
+        <label for="ma">E-mail</label><br>
+        <input type="email" id="ma" placeholder="Enter mail id"><br>
+        <span id="a3" style="color: red;"></span><br><br>
+
         <input type="submit">
     </form> 
-   <script>
+
+    <script>
     function submitForm(){
         let Name = document.getElementById('na').value;
         let Number = document.getElementById('nu').value;
         let Mail = document.getElementById('ma').value;
 
-        if(Name==""){
-            document.getElementById('a1').innerHtml="Kindly Enter Name"
+        if(Name == ""){
+            document.getElementById('a1').innerHTML = "Kindly Enter Name";
             return false;
-
+        } else {
+            document.getElementById('a1').innerHTML = "";
         }
-        
-        if(Number==""){
-            document.getElementById('a2').innerHtml="Kindly Enter Number"
+
+        if(Number == ""){
+            document.getElementById('a2').innerHTML = "Kindly Enter Number";
             return false;
+        } else if (isNaN(Number)) {
+            document.getElementById('a2').innerHTML = "Kindly Enter Number Type";
+            return false;
+        } else {
+            document.getElementById('a2').innerHTML = "";
         }
-       else if(Nmuber==isNaN){
-        document.getElementById('a2').innerHTML="Kindly Enter Number Type"
-        return false;
-       }
-       if(Mail==""){
-        document.getElementById('a3').innerHTML="Kindly Enter Email"
-        return false;
-       }
-       else{
-        document.getElementById('a3').innerHTML=""
-       }
-       return true;
-       alert("Form submitted")
 
+        if(Mail == ""){
+            document.getElementById('a3').innerHTML = "Kindly Enter Email";
+            return false;
+        } else {
+            document.getElementById('a3').innerHTML = "";
+        }
+
+        alert("Form submitted");
+        return true;
     }
-   </script>
+    </script>
 </body>
 </html>
