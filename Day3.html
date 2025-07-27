@@ -3,80 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Page</title>
+    <style>
+        body {
+            background-image: url('https://img.pikbest.com/ai/illus_our/20230427/4c7195f8fc5f59419336db1233ba49af.jpg!sw800');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        div {
+            font-family: cursive;
+            box-shadow: 20px 20px 30px rgba(245, 179, 210, 0.6);
+            border: 5px solid black;
+            border-radius: 70px;
+            width: 40%;
+            color: white;
+            font-size: xx-large;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            background-color: rgba(255, 255, 255, 0.2); 
+        }
+
+        input {
+            width: 300px;
+            height: 40px;
+            border: 3px solid black;
+            border-radius: 30px;
+            font-size: medium;
+        }
+
+        button {
+            width: 150px;
+            height: 40px;
+            background-color: white;
+            border: 3px solid black;
+            border-radius: 40px;
+            color: black;
+            font-size: large;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: black;
+            color: white;
+            transition: 0.3s;
+        }
+
+        td {
+            padding-bottom: 30px;
+        }
+
+        ::placeholder {
+            font-size: larger;
+            color: black;
+            padding-left: 30px;
+        }
+
+        @media screen and (max-width: 768px) {
+            div {
+                width: 90%;
+                font-size: x-large;
+            }
+
+            input {
+                width: 250px;
+            }
+        }
+    </style>
 </head>
-<style>
-    body{
-        background-color: blue;
-
-        background-image: url('https://img.pikbest.com/ai/illus_our/20230427/4c7195f8fc5f59419336db1233ba49af.jpg!sw800');
-        background-repeat: no-repeat;
-        background-size: cover;
-         background-position: center;
-       
-    }
-    div{
-        font-family: cursive;
-         box-shadow: 20px 20px 30px rgb(0, 0, 0);
-        border: 5px solid black;
-        border-radius: 70px;
-        width: 40%;
-        color: white;
-        font-size: xx-large;
-        display:flex ;
-        flex-direction: column;
-        align-items: center;
-    }
-    input{
-        width: 300px;
-        height: 40px;
-        border: 3px solid black;
-        border-radius: 30px;
-    }
-    button{
-        width: 150px;
-        height: 40px;
-        background-color: rgb(255, 255, 255);
-         border: 3px solid black;
-        border-radius: 40px;
-        color: rgb(8, 8, 8);
-        font-size: large;
-
-    }
-    td{
-        padding-bottom: 30px;
-    }
-    ::placeholder{
-        font-size: larger;
-        color: black;
-        padding-left: 30px;
-    }
-</style>
 <body>
     <div>
         <h1>Login Here</h1>
-       
         <form>
             <table>
                 <tr>
                     <td><label for="na">Name</label></td>
                     <td><input type="text" id="na" placeholder="Enter name here"></td>
                 </tr>
-                 <tr>
+                <tr>
                     <td><label for="nu">Number</label></td>
                     <td><input type="number" id="nu" placeholder="Enter number here"></td>
                 </tr>
-                 <tr>
-                    <td><label for="">Email</label></td>
+                <tr>
+                    <td><label for="em">Email</label></td>
                     <td><input type="email" id="em" placeholder="Enter email here"></td>
                 </tr>
-                 <tr>
-                    <td><label for="">Password</label></td>
+                <tr>
+                    <td><label for="pa">Password</label></td>
                     <td><input type="password" id="pa" placeholder="Enter password here"></td>
                 </tr>
-                 <tr>
-                    <td><button >Login</button></td>
-                  
+                <tr>
+                    <td colspan="2" style="text-align: center;"><button type="submit">Login</button></td>
                 </tr>
             </table>
         </form>
