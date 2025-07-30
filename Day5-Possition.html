@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bugatti Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      width: 100%;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow-x: hidden;
+    }
+
+    .Main1 {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    #Main1_Image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: transform 0.6s ease-in-out;
+    }
+
+    .Main1:hover #Main1_Image {
+      transform: scale(1.05);
+    }
+
+    .Sub13 {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+      color: red;
+      z-index: 2;
+    }
+
+    .Sub13 h1 {
+      font-size: 72px;
+      font-weight: 900;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    .logo-below img {
+      width: 140px;
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .menu td {
+      font-size: 22px;
+      padding: 6px 0;
+      color: #ff3c3c;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .menu td:hover {
+      color: white;
+      transform: translateX(8px);
+    }
+
+    .Sub11 {
+      position: absolute;
+      top: 30px;
+      right: 50px;
+    }
+
+    .Sub11 img {
+      width: 120px;
+      border-radius: 10px;
+      opacity: 0.9;
+    }
+
+    .Sub14 {
+      opacity: 0;
+      position: absolute;
+      bottom: 10vh;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 50px;
+      color: #dcdcdc;
+      font-weight: 600;
+      text-shadow: 1px 1px 4px black;
+      text-align: center;
+      transition: all 1.05s ease-in-out;
+    }
+
+    .Main1:hover .Sub14 {
+      opacity: 1;
+    }
+
+    span {
+      color: rgb(133, 1, 1);
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .Sub13 h1 {
+        font-size: 50px;
+      }
+      .menu td {
+        font-size: 18px;
+      }
+      .Sub14 {
+        font-size: 36px;
+      }
+    }
+
+   .Main2 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+.Sub21 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;  
+  padding: 40px;
+  background-color: black;
+  z-index: 1;
+}
+
+
+
+.Sub21 h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.Sub21 span {
+  color: red;
+}
+
+.Sub21 p {
+  font-size: 18px;
+  line-height: 1.8;
+  max-width: 90%;
+}
+
+
+.Sub22 {
+  flex: 1;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.Sub22 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.Sub23 {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 50vw;
+  height: 100vh;
+  z-index: 2;
+  transition: all 1s ease-in-out;
+}
+
+.Sub23 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Main2:hover .Sub23 {
+  left: 50vw;
+}
+
+
+@media (max-width: 768px) {
+  .Main2 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Sub21, .Sub22 {
+    flex: 1 1 100%;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .Sub22 img {
+    height: auto;
+  }
+
+  .Sub23 {
+    display: none; 
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+  
+  <div class="Main1">
+    <img src="https://wallpapercave.com/wp/wp7301499.jpg" alt="Bugatti Background" id="Main1_Image">
+
+    <div class="Sub11">
+      <img src="https://wallpaperaccess.com/full/1354324.jpg" alt="Top Right Logo">
+    </div>
+
+    <div class="Sub13">
+      <div class="logo-below">
+        <img src="https://th.bing.com/th/id/R.1b8b5147eed1f43f35a84eb1120fb9de?rik=NlBbPUJ4j4LXpA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fbugatti-logo-png-image-3840.png&ehk=75U%2f5UsruFlQWKcl8cB2tjYi2g50Gjn31XTJOF%2bVbgQ%3d&risl=&pid=ImgRaw&r=0" alt="Bugatti Logo">
+      </div>
+
+      <table class="menu">
+        <tr><td>Home</td></tr>
+        <tr><td>Racing</td></tr>
+        <tr><td>Models</td></tr>
+        <tr><td>About</td></tr>
+        <tr><td>Login</td></tr>
+      </table>
+    </div>
+
+    <div class="Sub14">
+      <h1>Bugatti <span>Veyron</span></h1>
+    </div>
+  </div>
+
+<div class="Main2">
+  <div class="Sub21">
+    <h1><span>Bugatti</span> Veyron</h1>
+    <p>
+      The heart and soul of the VEYRON is the 8.0-liter W16 engine with four turbochargers, 
+      which originally generated 1,001 PS, and an incredible 1,200 PS in later models. 
+      The 16-cylinder mid-engine is 710 mm in length, no longer than a conventional V12 engine, 
+      and weighs just 490 kg due to its lightweight construction.
+    </p>
+  </div>
+
+  <div class="Sub22">
+    <img src="https://wallpapercave.com/wp/wp5093922.jpg" alt="Bugatti Car">
+  </div>
+
+  <div class="Sub23">
+    <img src="https://wallpaperaccess.com/full/9160649.jpg" alt="Second Bugatti View">
+  </div>
+    
+     </div>
+</div>
+
+
+</body>
+</html> 
